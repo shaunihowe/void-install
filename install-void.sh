@@ -14,7 +14,7 @@ TIMEZONE="Europe/London"
 HARDWARECLOCK="UTC"           # UTC or localtime; UTC is recommended
 EFI_MIB=512
 BOOT_MIB=2048
-SWAP_MIB=4096                 # 0 disables swap; hibernation is not configured
+SWAP_MIB=8192                 # 0 disables swap; hibernation is not configured
 QUIET_BOOT=true
 BOOT_MESSAGE="Booting Void Linux..."
 REPOSITORY="https://repo-default.voidlinux.org/current"
@@ -27,8 +27,7 @@ CORE_PACKAGES=(
     gvfs udisks2 plymouth dejavu-fonts-ttf
 )
 PACKAGES=(
-    # firefox
-    # git
+    firefox git clang vim make
 )
 SERVICES=(
     # Additional services whose packages you have included above, e.g. chronyd
